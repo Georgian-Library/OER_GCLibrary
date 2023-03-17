@@ -113,3 +113,18 @@ thead {
 #half-title-page>.title {
     text-transform: uppercase;
 }
+
+/*Adding Book cover for the pdf */
+/* -> removing the title page content text */
+#half-title-page>.title {
+    content: "";
+    padding: 0;
+    margin: 0;
+}
+
+/* -> Adding the Cover Img */
+#half-title-page>.title::after {
+    width: 100%;
+    height: 100%;
+    content: url("https://ecampusontario.pressbooks.pub/app/uploads/sites/2323/2023/03/PB-cover-image.png")
+}
