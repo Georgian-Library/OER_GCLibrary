@@ -1,0 +1,163 @@
+/*Left align all the text and set margins for textbook page*/
+.blockquote,
+.front-matter blockquote,
+.part blockquote,
+.chapter blockquote,
+.back-matter blockquote,
+body#tinymce.wp-editor blockquote {
+    margin: 1em 2em 1em 2em;
+    font-family: "Encode Sans", sans-serif;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    letter-spacing: normal;
+    word-spacing: normal;
+    border-left: 0 none initial;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.front-matter p,
+.part p,
+.chapter p,
+.back-matter p,
+body#tinymce.wp-editor p {
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: left;
+    widows: 2;
+    orphans: 1;
+    hyphens: auto;
+    hyphenate-before: 3;
+    hyphenate-after: 3;
+    hyphenate-lines: 2;
+}
+
+.twocolumn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    text-align: left;
+    text-indent: 0;
+    column-gap: 1.5em;
+    column-count: 2;
+    column-fill: balance;
+}
+
+.twocolumn p {
+    font-size: inherit;
+    line-height: 1.4em;
+    text-align: left;
+    text-indent: 0;
+}
+
+.twocolumn p+p {
+    margin-top: 1em;
+}
+
+.threecolumn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    text-indent: 0;
+    text-align: left;
+    line-height: 1.4em;
+    column-gap: 1em;
+    column-count: 3;
+    column-fill: balance;
+}
+
+.threecolumn p {
+    font-size: inherit;
+    line-height: 1.4em;
+    text-align: left;
+    text-indent: 0;
+}
+
+.threecolumn p+p {
+    margin-top: 1em;
+}
+
+/*Capitalize all the page titles(h1)*/
+section.chapter header h1,
+section.front-matter header h1,
+section.back-matter header h1 {
+    display: block;
+    margin: 0 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 500;
+    hyphens: none;
+    line-height: 1.2em;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+/*Capitalize Chapter Titles*/
+section.part header h1 {
+    text-transform: capitalize;
+}
+
+/*Border at the bottom of header*/
+section.chapter header,
+section.front-matter header,
+section.back-matter header {
+    border-bottom: 1px solid #003180;
+}
+
+/*Shift table caption to top*/
+caption {
+    caption-side: top;
+    color: #000000;
+    /*Change caption text color*/
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    text-align: left;
+}
+
+/*Display pointer to open summary tag*/
+details summary {
+    cursor: pointer;
+}
+
+/*Align summary tag title with the arrow*/
+
+details summary>* {
+    display: inline;
+}
+
+/*Editing Marks*/
+[role="insertion"] {
+    color: #1215b0;
+    text-decoration: underline;
+}
+
+[role="deletion"] {
+    color: #be0000;
+    text-decoration: line-through;
+}
+
+/*Align tables to center*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Automatically sets max size of images to 50% of page*/
+img {
+    max-width: 50%;
+}
+
+/*tag items you don't want to display in webbook, but show in PDF export*/
+.onlyprint {
+    display: none;
+}
+
+/*make the text in very large tables smaller to fit in Pressbook Margins*/
+.largetable {
+    font-size: x-small;
+}

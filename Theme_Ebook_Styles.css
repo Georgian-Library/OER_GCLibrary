@@ -1,0 +1,2474 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "EncodeSans";
+  src: url("fonts/EncodeSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "EncodeSans";
+  src: url("fonts/EncodeSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "EncodeSans";
+  src: url("fonts/EncodeSans-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "EncodeSans";
+  src: url("fonts/EncodeSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-LightItalic.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: italic;
+}
+body, .entry-content {
+  color: initial;
+}
+blockquote {
+  color: initial;
+}
+h1 {
+  color: #003180;
+}
+h2 {
+  color: #003180;
+}
+h3 {
+  color: #003180;
+}
+h4 {
+  color: #003180;
+}
+h5 {
+  color: #003180;
+}
+h6 {
+  color: #003180;
+}
+table {
+  color: initial;
+}
+table p {
+  color: initial;
+}
+p.wp-caption-text {
+  color: #003180;
+}
+.index .ugc, .index .ugc p {
+  color: initial;
+}
+#half-title-page > .title {
+  color: #003180;
+}
+#title-page > .title {
+  color: #003180;
+}
+#title-page > .subtitle {
+  color: #003180;
+}
+#title-page > .author {
+  color: #003180;
+}
+#title-page > .publisher {
+  color: #003180;
+}
+#title-page > .publisher-city {
+  color: #003180;
+}
+.front-matter-title {
+  color: #003180;
+}
+#copyright-page .ugc p {
+  color: initial;
+}
+.dedication p {
+  color: #003180;
+}
+.epigraph p {
+  color: #003180;
+}
+.part-number {
+  color: #003180;
+}
+.part-title {
+  color: #003180;
+}
+.chapter-number, .entry-title span {
+  color: #003180;
+}
+.chapter-title {
+  color: #003180;
+}
+.chapter-subtitle {
+  color: #003180;
+}
+.chapter-author {
+  color: #003180;
+}
+.aphorism {
+  color: #003180;
+}
+.back-matter-title {
+  color: #003180;
+}
+.firstcharacter, .first-character {
+  color: #003180;
+}
+.pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right, .pullquote-outside, .pullquote--outside, .pullquote-inside, .pullquote--inside {
+  color: #003180;
+}
+div.sidebar {
+  background-color: #eee;
+}
+.textbox, .bcc-box {
+  background-color: white;
+  border-color: #003180;
+}
+.textbox.shaded, .bcc-box.shaded {
+  background-color: #f0f6ff;
+}
+.shaded {
+  background-color: #eee;
+}
+div.textbox.shaded {
+  border-color: white;
+}
+.blockquote, blockquote {
+  margin: 1em 2em 1em 2em;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0 0 0 0;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border-left: 0 none initial;
+  text-align: justify;
+}
+@media amzn-mobi {
+  blockquote, .blockquote {
+    margin: 1em 5%;
+    font-family: serif;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  p.bl_nonindent {
+    margin-left: 5%;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 0;
+  }
+  p.bl_indent {
+    margin-left: 5%;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 1.5em;
+  }
+}
+body {
+  font-family: "EncodeSans", sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+body * {
+  line-height: inherit;
+}
+@media amzn-mobi {
+  body {
+    font-family: serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.4em;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  hyphens: none;
+  page-break-after: avoid;
+}
+h1 {
+  border-bottom: none 0 initial;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.667em;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+h2 {
+  border-bottom: none 0 initial;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+h3 {
+  border-bottom: none 0 initial;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.333em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+h4 {
+  border-bottom: none 0 initial;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.167em;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+h5 {
+  border-bottom: none 0 initial;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.083em;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+h6 {
+  border-bottom: none 0 initial;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+@media amzn-mobi {
+  h1 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+  }
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+  h5 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+  }
+  h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+a {
+  text-decoration: none;
+}
+.front-matter a, .part a, .chapter a, .back-matter a {
+  text-decoration: none;
+}
+ol, ol.decimal {
+  margin-top: 1.4285714286em;
+  margin-bottom: 1.4285714286em;
+  margin-left: 0;
+  padding-left: 2em;
+}
+ol ol, ol.decimal ol {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+ul {
+  margin-top: 1.4285714286em;
+  margin-bottom: 1.4285714286em;
+  margin-left: 0;
+  padding-left: 2em;
+}
+ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+ol.legal {
+  list-style-type: decimal;
+}
+ol.legal ol {
+  list-style-type: lower-alpha;
+}
+ol.legal ol ol {
+  list-style-type: lower-roman;
+}
+ol.legal ol ol ol {
+  list-style-type: decimal;
+}
+ol.legal ol ol ol ol {
+  list-style-type: lower-alpha;
+}
+ol.legal ol ol ol ol ol {
+  list-style-type: lower-roman;
+}
+ol.harvard {
+  list-style-type: upper-roman;
+}
+ol.harvard ol {
+  list-style-type: upper-alpha;
+}
+ol.harvard ol ol {
+  list-style-type: decimal;
+}
+ol.harvard ol ol ol {
+  list-style-type: lower-alpha;
+}
+ol.harvard ol ol ol ol {
+  list-style-type: decimal;
+}
+ol.harvard ol ol ol ol ol {
+  list-style-type: lower-alpha;
+}
+dl dt {
+  display: block;
+  margin: 0 0 0 0;
+  font-style: normal;
+  font-weight: normal;
+  color: #003180;
+}
+dl dt dfn {
+  font-style: normal;
+  font-weight: normal;
+}
+dl dd {
+  margin: 0 0 0 0;
+  font-style: normal;
+  font-weight: normal;
+}
+li + li {
+  margin-top: 0;
+}
+ol.upper-alpha, ol.upper-alpha ol {
+  list-style-type: upper-alpha;
+}
+ol.lower-alpha, ol.lower-alpha ol {
+  list-style-type: lower-alpha;
+}
+ol.upper-roman, ol.upper-roman ol {
+  list-style-type: upper-roman;
+}
+ol.lower-roman, ol.lower-roman ol {
+  list-style-type: lower-roman;
+}
+dd + dt {
+  margin-top: 1em;
+}
+cite {
+  font-size: 0.9em;
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  word-spacing: normal;
+}
+code {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-family: monospace;
+  font-size: small;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+pre {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font-family: monospace;
+  font-size: small;
+  margin: 1em 0 1em 0;
+  padding: 0 0 0 0;
+}
+sub {
+  font-size: 0.8em;
+  font-style: normal;
+  text-transform: none;
+}
+sup {
+  font-size: 0.8em;
+  font-style: normal;
+  text-transform: none;
+}
+p {
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: initial;
+  widows: 2;
+  orphans: 1;
+}
+p + p, .indent {
+  margin-top: 0;
+  text-indent: 1em;
+}
+.no-indent {
+  margin-top: 1em;
+  text-indent: 0;
+}
+body, p {
+  hyphens: auto;
+  hyphenate-before: 3;
+  hyphenate-after: 3;
+  hyphenate-lines: 2;
+}
+#copyright-page p, .dedication p, .epigraph p {
+  hyphens: none;
+}
+.wp-caption.alignleft + p, .wp-nocaption.alignleft + p, .wp-caption.alignright + p, .wp-nocaption.alignright + p, .float-top + p, .float-bottom + p, .pullquote + p, .pullquote-right + p, .pullquote--right + p, .pullquote-left + p, .pullquote--left + p, .pullquote-outside + p, .pullquote--outside + p, .pullquote-inside + p, .pullquote--inside + p, .sidebar + p {
+  margin-top: 0;
+  text-indent: 1em;
+}
+.hanging-indent {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+@media amzn-mobi {
+  p, .ugc p, .chapter-ugc p {
+    font-family: serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+  }
+  .nonindent, .no-indent, p.nonindent, p.no-indent, div.ugc p.no-indent, div.ugc p.nonindent {
+    margin-top: 0.5em;
+    font-family: serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 0;
+  }
+  .indent, p.indent, div.ugc p.indent {
+    margin-top: 0;
+    font-family: serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 1.5em;
+  }
+  .front-matter-ugc p.indent, .front-matter-ugc p.nonindent, .front-matter-ugc p.no-indent {
+    font-family: serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+  }
+  .back-matter-ugc p.indent, .back-matter-ugc p.nonindent, .back-matter-ugc p.no-indent {
+    font-family: serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+  }
+}
+table {
+  display: table;
+  max-width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  overflow-x: scroll;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 0.9em;
+  hyphens: none;
+  text-align: left;
+  border-collapse: collapse;
+  border-top: 1px solid black;
+  border-right: 0 none black;
+  border-bottom: 1px solid black;
+  border-left: 0 none black;
+}
+table p {
+  text-align: left;
+}
+table caption {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+table.lines {
+  border-color: black;
+}
+table.lines tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-color: black;
+}
+table.lines th {
+  border-color: black;
+}
+table.lines td {
+  border-color: black;
+}
+table.no-lines tr, table.no-lines td {
+  border-top: 0;
+  border-bottom: 0;
+}
+table.shaded {
+  background-color: #eee;
+}
+table.border {
+  border: 1px solid;
+  border-color: black;
+}
+table.no-border, table.no-border tbody, table.no-border th, table.no-border tr, table.no-border td, table.no-border tfoot, table.no-border thead {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+table.grid, table.grid tbody, table.grid th, table.grid tr, table.grid td, table.grid tfoot, table.grid thead {
+  border: 1px solid;
+  border-color: black;
+}
+table.alignleft {
+  float: left;
+  margin-right: 1.5em;
+}
+table td img.alignleft {
+  float: left;
+}
+table.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+table td img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.alignright {
+  float: right;
+  margin-left: 1.5em;
+}
+table td img.alignright {
+  float: right;
+}
+table, tr, th {
+  page-break-inside: avoid;
+}
+th {
+  padding: 0.45em 0.45em 0.45em 0.45em;
+  text-align: left;
+  vertical-align: middle;
+  border-top: 0 none black;
+  border-right: 0 none black;
+  border-bottom: 0 none black;
+  border-left: 0 none black;
+}
+td {
+  border: 0 none;
+  border-color: black;
+  padding: 0.45em 0.45em 0.45em 0.45em;
+  text-align: left;
+  vertical-align: middle;
+}
+tr {
+  border-top: 0 none black;
+  border-bottom: 0 none black;
+}
+ol.legal li::before, ol.harvard li::before, ol.decimal li::before {
+  min-width: auto !important;
+  width: auto !important;
+}
+.twocolumn {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  text-align: initial;
+  text-indent: 0;
+  column-gap: 1.5em;
+  column-count: 2;
+  column-fill: balance;
+}
+.twocolumn p {
+  font-size: inherit;
+  text-align: initial;
+  text-indent: 1em;
+}
+.twocolumn p + p {
+  margin-top: 0;
+}
+.threecolumn {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+  text-indent: 0;
+  text-align: initial;
+  column-gap: 1em;
+  column-count: 3;
+  column-fill: balance;
+}
+.threecolumn p {
+  font-size: inherit;
+  text-align: initial;
+  text-indent: 1em;
+}
+.threecolumn p + p {
+  margin-top: 0;
+}
+.contributors .chapter-authors, .contributors .book-contributors {
+  margin-top: 2rem;
+  font-family: "EncodeSans", sans-serif;
+}
+.contributors .about-authors {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.contributors .contributor {
+  margin-top: 2rem;
+}
+.contributors .contributor__type {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contributors .contributor__name__and__links::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contributors .contributor__profile__picture {
+  float: left;
+  margin: 0;
+  width: 33%;
+  max-width: 400px;
+  border-radius: 50%;
+}
+.contributors .contributor__name__and__links > div {
+  float: left;
+}
+.contributors .contributor__name__and__links > div.contributor__info__small {
+  width: 67%;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.contributors .contributor__name__and__links > div.contributor__info__large {
+  width: 100%;
+}
+.contributors .contributor__name {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.333em;
+  text-indent: 0;
+  margin: 0;
+}
+.contributors .contributor__institution {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-indent: 0;
+  margin: 0;
+}
+.contributors .contributor__website {
+  margin-top: 0;
+  text-indent: 0;
+}
+.contributors .contributor__links {
+  margin-top: 0;
+  display: inline-block;
+}
+.contributors .contributor__links svg {
+  width: 45px;
+  height: 45px;
+}
+.contributors .contributor__link {
+  margin-top: 0;
+  text-indent: 0;
+}
+.contributors .contributor__bio {
+  margin-top: 1em;
+}
+.first-character, .firstcharacter {
+  font-family: "Raleway", sans-serif;
+  font-size: 300%;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 0.7em;
+}
+.clear {
+  clear: both;
+}
+.endnote, .footnote {
+  font-size: 0.8em;
+  vertical-align: top;
+}
+.footnotes {
+  font-size: 0.9rem;
+}
+.fn-p, .fn_p {
+  display: block;
+  text-indent: 1em;
+}
+.fn-blockquote, .fn_blockquote {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 1.5em;
+  font-size: 0.9em;
+}
+.endnotes {
+  margin-left: 1.5em;
+}
+.endnotes h3 {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  margin-left: -1.5em;
+}
+.endnotes hr {
+  margin-top: 2em;
+  border: 0;
+}
+.endnotes ol {
+  margin-top: 0.4em;
+  margin-left: 0;
+  font-size: 0.85em;
+  list-style-position: outside;
+}
+.endnotes li {
+  padding-left: 0;
+  margin-top: 0.4em;
+  text-indent: 0;
+}
+.endnotes p + p {
+  text-indent: 0;
+}
+.no-hyphens {
+  hyphens: none;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.display-none {
+  display: none;
+}
+.epub-display-none, .not-epub {
+  display: none;
+}
+.web-only {
+  display: none;
+}
+.pdf-only {
+  display: none;
+}
+@media amzn-mobi {
+  .mobi-display-none {
+    display: none;
+  }
+}
+aside, .aside {
+  padding: 0.9em 0 0.9em 0;
+  margin: 2em 10% 2em 10%;
+  text-indent: 0;
+  border-top: 1px solid;
+  border-right: 0;
+  border-bottom: 1px solid;
+  border-left: 0;
+}
+.pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right {
+  display: inline-block;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: bold;
+  hyphens: none;
+  text-align: center;
+  text-indent: 0;
+  border-top: 0 none transparent;
+  border-bottom: 0 none transparent;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.pullquote {
+  margin: 1em auto 1em;
+  width: 90%;
+}
+.pullquote-left, .pullquote--left {
+  float: left;
+  margin: 1em 1em 1em 1em;
+  text-align: center;
+  width: 45%;
+}
+.pullquote-right, .pullquote--right {
+  float: right;
+  margin: 1em 1em 1em 1em;
+  text-align: center;
+  width: 45%;
+}
+@supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
+  .pullquote, .pullquote-left, .pullquote--left, .pullquote-right, .pullquote--right {
+    -webkit-column-break-inside: avoid;
+  }
+}
+.sidebar {
+  float: right;
+  width: 40%;
+  padding: 1em 1em 1em 1em;
+  margin-top: 1em;
+  margin-right: 0;
+  margin-left: 1em;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.sidebar p, .sidebar p + p {
+  text-align: left;
+}
+.page-break-after, .pdf-page-break-after {
+  page-break-after: always;
+}
+.page-break-before, .pdf-page-break-before {
+  page-break-before: always;
+}
+.page-break-inside, .pdf-page-break-inside {
+  page-break-inside: auto;
+}
+hr {
+  width: 100%;
+  margin: 2.2222222222em auto 2.2222222222em;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 1px initial;
+  border-left: none;
+  text-align: center;
+}
+hr.break-symbols {
+  padding-top: 0;
+  border-top: 0 none #003180;
+  margin-top: 2.2222222222em;
+  margin-bottom: 1.66em;
+  border: 0;
+}
+hr.break-symbols::after {
+  display: block;
+  font-size: 1.1em;
+  text-align: center;
+  content: "٭";
+}
+.section-break {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-indent: 0;
+}
+.section-break-space {
+  margin-top: 1em;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+.section-break-page {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-indent: 0;
+  page-break-after: always;
+}
+.section-break-page-invisible {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-indent: 0;
+  visibility: hidden;
+  page-break-after: always;
+}
+.blank-page {
+  visibility: hidden;
+  page-break-before: always;
+}
+.textbox, .bcc-box {
+  padding: 2.5em 2.5em 2.5em 2.5em;
+  margin: 0.9em 0 0.9em 0;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 0.8125em;
+  font-style: normal;
+  font-weight: normal;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-indent: 0;
+  border-style: solid;
+  border-width: 0.05em;
+  border-radius: 0;
+}
+.textbox ul, .bcc-box ul {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+.textbox ol, .bcc-box ol {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+.textbox li, .bcc-box li {
+  margin-left: 0.75em;
+}
+.textbox p, .bcc-box p {
+  margin-bottom: 0.5em;
+  text-align: left;
+  text-indent: 0;
+}
+.textbox * + p, .bcc-box * + p {
+  margin-top: 0;
+  text-indent: 0;
+}
+.textbox .textbox-caption, .bcc-box .textbox-caption {
+  display: block;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: bold;
+}
+.textbox.learning-objectives, .bcc-box.learning-objectives {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #cbd4b6;
+}
+.textbox.learning-objectives h3, .bcc-box.learning-objectives h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #5a7613;
+  text-align: left;
+}
+.textbox.textbox--learning-objectives, .bcc-box.textbox--learning-objectives {
+  margin-bottom: 1.35em;
+  padding: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #cbd4b6;
+}
+.textbox.textbox--learning-objectives .textbox__header, .bcc-box.textbox--learning-objectives .textbox__header {
+  background: #5a7613;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #fff;
+  font-size: 0.9em;
+  font-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  text-align: left;
+}
+.textbox.textbox--learning-objectives .textbox__header h1, .textbox.textbox--learning-objectives .textbox__header h2, .textbox.textbox--learning-objectives .textbox__header h3, .textbox.textbox--learning-objectives .textbox__header h4, .textbox.textbox--learning-objectives .textbox__header h5, .textbox.textbox--learning-objectives .textbox__header h6, .bcc-box.textbox--learning-objectives .textbox__header h1, .bcc-box.textbox--learning-objectives .textbox__header h2, .bcc-box.textbox--learning-objectives .textbox__header h3, .bcc-box.textbox--learning-objectives .textbox__header h4, .bcc-box.textbox--learning-objectives .textbox__header h5, .bcc-box.textbox--learning-objectives .textbox__header h6 {
+  color: #fff;
+}
+.textbox.textbox--learning-objectives .textbox__header p, .bcc-box.textbox--learning-objectives .textbox__header p {
+  text-indent: 0;
+}
+.textbox.textbox--learning-objectives .textbox__content, .bcc-box.textbox--learning-objectives .textbox__content {
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+}
+.textbox.key-takeaways, .bcc-box.key-takeaways {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #e8c1A2;
+}
+.textbox.key-takeaways h3, .bcc-box.key-takeaways h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #c25700;
+  text-align: left;
+}
+.textbox.textbox--key-takeaways, .bcc-box.textbox--key-takeaways {
+  margin-bottom: 1.35em;
+  padding: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #e8c1A2;
+}
+.textbox.textbox--key-takeaways .textbox__header, .bcc-box.textbox--key-takeaways .textbox__header {
+  background: #c25700;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #fff;
+  font-size: 0.9em;
+  font-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  text-align: left;
+}
+.textbox.textbox--key-takeaways .textbox__header h1, .textbox.textbox--key-takeaways .textbox__header h2, .textbox.textbox--key-takeaways .textbox__header h3, .textbox.textbox--key-takeaways .textbox__header h4, .textbox.textbox--key-takeaways .textbox__header h5, .textbox.textbox--key-takeaways .textbox__header h6, .bcc-box.textbox--key-takeaways .textbox__header h1, .bcc-box.textbox--key-takeaways .textbox__header h2, .bcc-box.textbox--key-takeaways .textbox__header h3, .bcc-box.textbox--key-takeaways .textbox__header h4, .bcc-box.textbox--key-takeaways .textbox__header h5, .bcc-box.textbox--key-takeaways .textbox__header h6 {
+  color: #fff;
+}
+.textbox.textbox--key-takeaways .textbox__header p, .bcc-box.textbox--key-takeaways .textbox__header p {
+  text-indent: 0;
+}
+.textbox.textbox--key-takeaways .textbox__content, .bcc-box.textbox--key-takeaways .textbox__content {
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+}
+.textbox.exercises, .bcc-box.exercises {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #cbdde5;
+}
+.textbox.exercises h3, .bcc-box.exercises h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #0b6396;
+  text-align: left;
+}
+.textbox.textbox--exercises, .bcc-box.textbox--exercises {
+  margin-bottom: 1.35em;
+  padding: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #cbdde5;
+}
+.textbox.textbox--exercises .textbox__header, .bcc-box.textbox--exercises .textbox__header {
+  background: #0b6396;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #fff;
+  font-size: 0.9em;
+  font-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  text-align: left;
+}
+.textbox.textbox--exercises .textbox__header h1, .textbox.textbox--exercises .textbox__header h2, .textbox.textbox--exercises .textbox__header h3, .textbox.textbox--exercises .textbox__header h4, .textbox.textbox--exercises .textbox__header h5, .textbox.textbox--exercises .textbox__header h6, .bcc-box.textbox--exercises .textbox__header h1, .bcc-box.textbox--exercises .textbox__header h2, .bcc-box.textbox--exercises .textbox__header h3, .bcc-box.textbox--exercises .textbox__header h4, .bcc-box.textbox--exercises .textbox__header h5, .bcc-box.textbox--exercises .textbox__header h6 {
+  color: #fff;
+}
+.textbox.textbox--exercises .textbox__header p, .bcc-box.textbox--exercises .textbox__header p {
+  text-indent: 0;
+}
+.textbox.textbox--exercises .textbox__content, .bcc-box.textbox--exercises .textbox__content {
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+}
+.textbox.examples, .bcc-box.examples {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #c0bdcd;
+}
+.textbox.examples h3, .bcc-box.examples h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #4f446d;
+  text-align: left;
+}
+.textbox.textbox--examples, .bcc-box.textbox--examples {
+  margin-bottom: 1.35em;
+  padding: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #c0bdcd;
+}
+.textbox.textbox--examples .textbox__header, .bcc-box.textbox--examples .textbox__header {
+  background: #4f446d;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #fff;
+  font-size: 0.9em;
+  font-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  text-align: left;
+}
+.textbox.textbox--examples .textbox__header h1, .textbox.textbox--examples .textbox__header h2, .textbox.textbox--examples .textbox__header h3, .textbox.textbox--examples .textbox__header h4, .textbox.textbox--examples .textbox__header h5, .textbox.textbox--examples .textbox__header h6, .bcc-box.textbox--examples .textbox__header h1, .bcc-box.textbox--examples .textbox__header h2, .bcc-box.textbox--examples .textbox__header h3, .bcc-box.textbox--examples .textbox__header h4, .bcc-box.textbox--examples .textbox__header h5, .bcc-box.textbox--examples .textbox__header h6 {
+  color: #fff;
+}
+.textbox.textbox--examples .textbox__header p, .bcc-box.textbox--examples .textbox__header p {
+  text-indent: 0;
+}
+.textbox.textbox--examples .textbox__content, .bcc-box.textbox--examples .textbox__content {
+  margin: 0;
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+}
+.bcc-highlight {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #cbd4b6;
+}
+.bcc-highlight h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #5a7613;
+  text-align: left;
+}
+.bcc-success {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #e8c1A2;
+}
+.bcc-success h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #c25700;
+  text-align: left;
+}
+.bcc-info {
+  padding: 1.7777777778em 1.7777777778em 1.7777777778em 1.7777777778em;
+  margin-bottom: 1.35em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  color: #000;
+  background: #cbdde5;
+}
+.bcc-info h3 {
+  padding: 1.4814814815em 1.4814814815em 1.4814814815em 1.4814814815em;
+  margin: -1.4814814815em -1.4814814815em 1.4814814815em -1.4814814815em;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 0.975em;
+  font-style: none;
+  font-weight: bold;
+  color: #fff;
+  background: #0b6396;
+  text-align: left;
+}
+.textbox--sidebar {
+  float: right;
+  margin: 1em 0 1em 1em;
+  max-width: 25%;
+}
+@media amzn-mobi {
+  div.textbox {
+    margin: 5%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  .ugc.chapter-ugc.textbox {
+    padding-left: 10%;
+    margin: 1.5em 5% 1.5em 10%;
+    font-size: 0.9em;
+    font-style: italic;
+    border-top: 1px solid;
+  }
+  .ugc.chapter-ugc.textbox p.nonindent, .ugc.chapter-ugc.textbox p.indent {
+    margin-right: 5%;
+    margin-left: 10%;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+}
+.glossary-term {
+  font-weight: bold;
+}
+div.footnotes {
+  font-size: 0.9em !important;
+}
+div.footnotes li + li {
+  margin-top: 0.5em;
+}
+div.textbox--sidebar.textbox--examples, div.textbox--sidebar.textbox--key-takeaways, div.textbox--sidebar.textbox--exercises, div.textbox--sidebar.textbox--learning-objectives {
+  width: 40%;
+  max-width: 40%;
+  padding: 0.2em;
+}
+div.textbox--sidebar.textbox--examples .textbox__header, div.textbox--sidebar.textbox--key-takeaways .textbox__header, div.textbox--sidebar.textbox--exercises .textbox__header, div.textbox--sidebar.textbox--learning-objectives .textbox__header {
+  padding: 1em;
+  border-bottom: none;
+}
+div.textbox--sidebar.textbox--examples .textbox__header p, div.textbox--sidebar.textbox--key-takeaways .textbox__header p, div.textbox--sidebar.textbox--exercises .textbox__header p, div.textbox--sidebar.textbox--learning-objectives .textbox__header p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+div.textbox--sidebar.textbox--examples .textbox__header > header.textbox__header, div.textbox--sidebar.textbox--examples .textbox__header > div.textbox__content, div.textbox--sidebar.textbox--key-takeaways .textbox__header > header.textbox__header, div.textbox--sidebar.textbox--key-takeaways .textbox__header > div.textbox__content, div.textbox--sidebar.textbox--exercises .textbox__header > header.textbox__header, div.textbox--sidebar.textbox--exercises .textbox__header > div.textbox__content, div.textbox--sidebar.textbox--learning-objectives .textbox__header > header.textbox__header, div.textbox--sidebar.textbox--learning-objectives .textbox__header > div.textbox__content {
+  padding: 1em;
+}
+/* stylelint-disable-next-line */
+.interactive-content--audio .interactive-content__icon {
+  background-image: url("images/icon-audio.png");
+}
+p img.aligncenter {
+  margin: 0.5em auto 2em;
+  text-align: center;
+  display: block;
+}
+p img.aligncenter figcaption, p img.aligncenter .wp-caption-text {
+  text-align: left;
+}
+p img.alignleft {
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+  padding-right: 0;
+}
+p img.alignleft figcaption, p img.alignleft .wp-caption-text {
+  text-align: left;
+}
+p img.alignright {
+  float: right;
+  margin: 0.5em 0 0.5em 1em;
+  padding-left: 0;
+}
+p img.alignright figcaption, p img.alignright .wp-caption-text {
+  text-align: left;
+}
+p img.alignleft, p img.alignright {
+  max-width: 50%;
+}
+figcaption, .wp-caption-text {
+  font-family: "EncodeSans", sans-serif;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: normal;
+  hyphens: none;
+  padding-bottom: 0.5em;
+  margin-top: 0.5em;
+  text-align: left;
+  text-transform: none;
+  text-indent: 0;
+  color: #003180;
+}
+img {
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  page-break-inside: avoid !important;
+}
+img.mathjax {
+  vertical-align: middle;
+  border: none;
+  background: none;
+}
+.wp-caption, .wp-nocaption {
+  height: auto;
+  max-width: 100%;
+  page-break-inside: avoid !important;
+}
+.wp-caption.alignnone, .wp-nocaption.alignnone {
+  margin: 0.5em 0 2em;
+  text-align: left;
+  width: auto;
+}
+.wp-caption.alignnone figcaption, .wp-caption.alignnone .wp-caption-text, .wp-nocaption.alignnone figcaption, .wp-nocaption.alignnone .wp-caption-text {
+  text-align: left;
+}
+.wp-caption.aligncenter, .wp-nocaption.aligncenter {
+  margin: 0.5em auto 2em;
+  text-align: center;
+  width: auto;
+}
+.wp-caption.aligncenter figcaption, .wp-caption.aligncenter .wp-caption-text, .wp-nocaption.aligncenter figcaption, .wp-nocaption.aligncenter .wp-caption-text {
+  text-align: left;
+}
+.wp-caption.aligncenter img, .wp-nocaption.aligncenter img {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.wp-caption.alignright, .wp-nocaption.alignright {
+  float: right;
+  margin: 0.5em 0 0.5em 1em;
+  max-width: 50%;
+  padding-left: 0;
+  width: 50% !important;
+}
+.wp-caption.alignright figcaption, .wp-caption.alignright .wp-caption-text, .wp-nocaption.alignright figcaption, .wp-nocaption.alignright .wp-caption-text {
+  text-align: left;
+}
+.wp-caption.alignright img, .wp-nocaption.alignright img {
+  width: 100%;
+}
+.wp-caption.alignleft, .wp-nocaption.alignleft {
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+  max-width: 50%;
+  padding-right: 0;
+  width: 50% !important;
+}
+.wp-caption.alignleft figcaption, .wp-caption.alignleft .wp-caption-text, .wp-nocaption.alignleft figcaption, .wp-nocaption.alignleft .wp-caption-text {
+  text-align: left;
+}
+.wp-caption.alignleft img, .wp-nocaption.alignleft img {
+  width: 100%;
+}
+.wp-caption.alignnone img {
+  float: none;
+  margin-right: 0;
+  max-width: 100% !important;
+}
+.wp-caption.alignnone figcaption, .wp-caption.alignnone .wp-caption-text {
+  box-sizing: border-box;
+  float: none;
+  padding-left: 0;
+  width: 100% !important;
+}
+.wp-caption.alignnone::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.interactive-content {
+  margin-bottom: 1em;
+  padding: 2.5em 2.5em 2.5em 2.5em;
+}
+.interactive-content__icon {
+  display: block;
+  float: left;
+  width: 3em;
+  height: 3em;
+  margin: 0 0.5em 0 0;
+  background-image: url("images/icon-interactive.png");
+  background-repeat: no-repeat;
+  background-size: 3em 3em;
+}
+.interactive-content img {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.interactive-content p {
+  font-size: 0.9em;
+  font-style: italic;
+  font-family: "EncodeSans", sans-serif;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-indent: 0;
+  text-align: left;
+}
+.embed div.figcaption {
+  text-align: center;
+}
+.interactive-content--video .interactive-content__icon {
+  background-image: url("images/icon-video.png");
+}
+div.bibliography p {
+  padding-left: 2em;
+  font-size: 0.9em;
+  text-indent: -2em;
+}
+.index .ugc, .index .ugc p {
+  text-align: left;
+}
+div.index .ugc {
+  column-count: 2;
+  column-gap: 2.5em;
+}
+div.index div {
+  margin-bottom: 4em;
+}
+div.index p, div.index .indent, div.index .no-indent {
+  padding-left: 2em;
+  font-size: 0.9em;
+  text-align: left;
+  text-indent: -2em;
+}
+div.index .sub-entry {
+  padding-left: 4em;
+}
+.back-matter .license-attribution p {
+  text-align: left;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 2em;
+  page-break-inside: avoid;
+  text-indent: 0;
+}
+.back-matter .license-attribution img {
+  background: transparent;
+  height: 2em;
+  width: auto;
+}
+.numberless > .chapter-number {
+  display: none;
+}
+.chapter .license-attribution p {
+  text-align: left;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 2em;
+  page-break-inside: avoid;
+  text-indent: 0;
+}
+.chapter .license-attribution img {
+  background: transparent;
+  height: 2em;
+  width: auto;
+}
+.before-title .front-matter-title-wrap {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+#copyright-page {
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+}
+#copyright-page .ugc {
+  float: none;
+}
+#copyright-page .ugc p {
+  margin-bottom: 1em;
+  font-family: "EncodeSans", sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  line-height: 1.5555555556em;
+  text-align: left;
+  text-indent: 0;
+}
+div.dedication, section.dedication {
+  margin-top: 2em;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+div.dedication p, section.dedication p {
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.4em;
+  text-align: center;
+}
+div.epigraph, section.epigraph {
+  margin-top: 2em;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+div.epigraph p, section.epigraph p {
+  margin-bottom: 1em;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.4em;
+  text-align: center;
+}
+.front-matter .license-attribution p, #copyright-page .license-attribution p {
+  text-align: left;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  page-break-inside: avoid;
+  text-indent: 0;
+}
+.front-matter .license-attribution img, #copyright-page .license-attribution img {
+  background: transparent;
+  height: 2em;
+  width: auto;
+}
+#copyright-page p + p {
+  margin-top: 1em;
+  text-indent: 0;
+}
+@media amzn-mobi {
+  #copyright-page {
+    margin: 10%;
+    font-family: normal;
+    font-style: normal;
+    text-indent: 0;
+  }
+  #copyright-page p {
+    margin-bottom: 0.5em;
+    font-family: normal;
+    font-size: 0.875em;
+    font-style: normal;
+    text-indent: 0;
+  }
+}
+.part.invisible {
+  display: none;
+}
+#half-title-page {
+  display: none;
+}
+#half-title-page > .title {
+  margin-top: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  hyphens: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: center;
+  text-transform: none;
+}
+.title {
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+}
+.subtitle {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1.5em;
+  font-style: none;
+  font-weight: normal;
+  hyphens: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: left;
+  text-transform: none;
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+}
+.author {
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  letter-spacing: 0;
+  word-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+  text-indent: 0;
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+}
+div.publisher-logo {
+  display: block;
+  width: 20%;
+  height: auto;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+.publisher {
+  display: block;
+  float: none;
+  margin: 3em 0 0.5em 0;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: left;
+  text-transform: none;
+  text-indent: 0;
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+}
+.publisher-city {
+  float: none;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: left;
+  text-transform: none;
+  text-indent: 0;
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+}
+@media amzn-kf8 {
+  #title-page .title::before {
+    content: "";
+  }
+  #title-page .title::after {
+    content: "";
+  }
+}
+@media amzn-mobi {
+  .title {
+    margin-top: 2em;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .subtitle {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .author {
+    font-style: normal;
+    font-weight: normal;
+  }
+  .publisher {
+    font-style: normal;
+    font-weight: normal;
+  }
+  .publisher-city {
+    font-style: normal;
+    font-weight: normal;
+  }
+  .pb-publogo-wrap {
+    display: none;
+  }
+  .pb-publogo {
+    display: none;
+  }
+  .pb-publogo-wide {
+    display: none;
+  }
+}
+.back-matter-title-wrap {
+  margin: 0 0 2em 0;
+}
+.back-matter-title-wrap .back-matter-number {
+  display: none;
+}
+.back-matter-title-wrap .back-matter-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  hyphens: none;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.back-matter-title-wrap .chapter-subtitle {
+  display: block;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.back-matter-title-wrap .chapter-author {
+  display: block;
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-align: left;
+  text-indent: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.back-matter-title-wrap .back-matter-title + .chapter-subtitle, .back-matter-title-wrap .short-title + .chapter-subtitle {
+  margin-top: 1em;
+}
+.back-matter-title-wrap .back-matter-title + .chapter-author, .back-matter-title-wrap .short-title + .chapter-author {
+  margin-top: 1em;
+}
+.back-matter-title-wrap .chapter-subtitle + .chapter-author {
+  margin-top: 0.5em;
+}
+.back-matter-title-wrap .back-matter-title:last-child {
+  margin-bottom: 1em;
+}
+.back-matter-title-wrap .chapter-subtitle:last-child {
+  margin-bottom: 1em;
+}
+@media amzn-mobi {
+  .back-matter-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+.chapter-title-wrap {
+  margin: 0 0 2em 0;
+}
+.chapter-title-wrap .chapter-title {
+  border-bottom: 0 none #f0f6ff;
+  padding-bottom: 0;
+  display: block;
+  margin: 0 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  hyphens: none;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.chapter-title-wrap .chapter-number {
+  border-bottom: 0 none #f0f6ff;
+  display: block;
+  margin: 0.5em 0 1em 0;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.chapter-title-wrap .chapter-number::before {
+  content: "";
+  text-transform: uppercase;
+}
+.chapter-title-wrap .chapter-number::after {
+  content: ".";
+}
+.numberless .chapter-title-wrap .chapter-number::after {
+  content: "";
+}
+.numberless .chapter-title-wrap .chapter-number::before {
+  content: "";
+}
+.chapter-title-wrap .chapter-subtitle {
+  display: block;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.chapter-title-wrap .chapter-author {
+  display: block;
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-align: left;
+  text-indent: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.chapter-title-wrap .chapter-title + .chapter-subtitle, .chapter-title-wrap .short-title + .chapter-subtitle {
+  margin-top: 1em;
+}
+.chapter-title-wrap .chapter-title + .chapter-author, .chapter-title-wrap .short-title + .chapter-author {
+  margin-top: 1em;
+}
+.chapter-title-wrap .chapter-subtitle + .chapter-author {
+  margin-top: 0.5em;
+}
+.chapter-title-wrap .chapter-title:last-child {
+  margin-bottom: 1em;
+}
+.chapter-title-wrap .chapter-subtitle:last-child {
+  margin-bottom: 1em;
+}
+.aphorism, blockquote.aphorism {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-bottom: 0;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-indent: 0;
+}
+.aphorism cite, blockquote.aphorism cite {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 0.9em;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  text-transform: none;
+  text-align: left;
+}
+.aphorism cite::before, blockquote.aphorism cite::before {
+  content: "— ";
+}
+@media amzn-mobi {
+  div.chapter-title-wrap {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .chapter-number {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+  .chapter-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+  .chapter-subtitle {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+  .chapter-author {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+@media amzn-kf8 {
+  .chapter-title-wrap .chapter-title::before {
+    content: "";
+  }
+  .chapter-title-wrap .chapter-title::after {
+    content: "";
+  }
+}
+.front-matter-title-wrap {
+  margin: 0 0 2em 0;
+}
+.front-matter-title-wrap .front-matter-number {
+  display: none;
+}
+.front-matter-title-wrap .front-matter-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: none 0 #f0f6ff;
+  letter-spacing: normal;
+  word-spacing: normal;
+  hyphens: none;
+  text-align: left;
+  text-transform: uppercase;
+}
+.front-matter-title-wrap .chapter-subtitle {
+  display: block;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.front-matter-title-wrap .chapter-author {
+  display: block;
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-align: left;
+  text-indent: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.front-matter-title-wrap .front-matter-title + .chapter-subtitle, .front-matter-title-wrap .short-title + .chapter-subtitle {
+  margin-top: 1em;
+}
+.front-matter-title-wrap .front-matter-title + .chapter-author, .front-matter-title-wrap .short-title + .chapter-author {
+  margin-top: 1em;
+}
+.front-matter-title-wrap .chapter-subtitle + .chapter-author {
+  margin-top: 0.5em;
+}
+.front-matter-title-wrap .front-matter-title:last-child {
+  margin-bottom: 1em;
+}
+.front-matter-title-wrap .chapter-subtitle:last-child {
+  margin-bottom: 1em;
+}
+#toc h1 {
+  display: block;
+  margin: 0 0 2em 0;
+  border-bottom: none 0 #f0f6ff;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  color: #003180;
+  hyphens: none;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+@media amzn-mobi {
+  .front-matter-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+.part-title-wrap {
+  margin: 0 0 2em 0;
+}
+.part-title-wrap .part-number {
+  border-bottom: none 0 #f0f6ff;
+  display: inline;
+  margin: 0.5em 0 1em 0;
+  padding-bottom: 0;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  text-transform: none;
+  page-break-after: avoid;
+}
+.part-title-wrap .part-number::before {
+  text-transform: uppercase;
+  content: "Part ";
+}
+.part-title-wrap .part-number::after {
+  content: "";
+}
+.part-title-wrap .part-title {
+  margin: 0 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 500;
+  hyphens: none;
+  text-align: left;
+  text-transform: uppercase;
+  page-break-after: avoid;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border-bottom: 0 none #f0f6ff;
+}
+@media amzn-mobi {
+  .part-number {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+  .part-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+.chapter-title-wrap, .front-matter-title-wrap, .back-matter-title-wrap {
+  border-bottom: 1px solid #003180;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+}
+#toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#toc li {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#toc li:first-of-type {
+  margin-top: 0;
+}
+#toc a {
+  border: 0;
+}
+#toc .toc-chapter-title {
+  page-break-after: avoid;
+  position: relative;
+  text-indent: 0;
+}
+#toc .chapter-subtitle, #toc .chapter-author {
+  hyphens: none;
+  text-indent: 0;
+  color: inherit;
+}
+#toc .chapter-license {
+  display: block;
+}
+#toc .front-matter {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-transform: none;
+}
+#toc .front-matter .chapter-subtitle {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: none;
+}
+#toc .front-matter .chapter-author {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+}
+#toc .part {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  margin-top: 3em;
+  text-transform: none;
+}
+#toc .chapter {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+}
+#toc .chapter .chapter-subtitle {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 0.2em;
+}
+#toc .chapter .chapter-author {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 0.2em;
+}
+#toc .back-matter {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  hyphens: none;
+  text-transform: none;
+}
+#toc .back-matter .chapter-subtitle {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: none;
+}
+#toc .back-matter .chapter-author {
+  color: #003180;
+  font-family: "EncodeSans", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+}
+#toc .front-matter + .front-matter {
+  margin-top: 0.25em;
+}
+#toc .chapter + .chapter {
+  margin-top: 0.25em;
+}
+#toc .back-matter + .back-matter {
+  margin-top: 0.25em;
+}
+#toc .front-matter + .chapter, #toc .chapter + .back-matter, #toc .part + .chapter, #toc .part + .back-matter {
+  margin-top: 1.5em;
+}
+#toc .sections {
+  margin-top: 0.25em;
+}
+#toc .section {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 0.25em;
+}
+@media amzn-kf8 {
+  #toc .toc-chapter-title {
+    /* CSS property in content is not supported. Table of contents cannot be clicked. */
+    position: static;
+  }
+}
+@media amzn-mobi {
+  #toc {
+    font-style: normal;
+    font-weight: normal;
+    border: 0;
+    text-align: left;
+  }
+  #toc h1 {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+  }
+  #toc .toc-chapter-title {
+    /* CSS property in content is not supported. Table of contents cannot be clicked. */
+    position: static;
+  }
+  span.chapter-author {
+    display: none;
+  }
+  span.chapter-subtitle {
+    display: none;
+  }
+  span.toc-chapter-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+  }
+  li.front-matter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  li.part {
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: left;
+    margin-top: 1em;
+  }
+  li.chapter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+  }
+  li.back-matter {
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+    margin-top: 1em;
+  }
+  #toc a {
+    font-style: normal;
+    font-weight: normal;
+  }
+  #toc ul .front-matter, #toc ul .back-matter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+  }
+  #toc .front-matter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+  }
+  #toc .back-matter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+  }
+  #toc .part {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  #toc li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+  }
+}
+#toc li {
+  text-align: left;
+}
+#toc .toc-chapter-title {
+  display: inline-block;
+  width: 100%;
+}
+#toc .chapter-subtitle {
+  display: inline-block;
+  width: 100%;
+}
+#toc .chapter-author {
+  display: inline-block;
+  width: 100%;
+}
+#toc .toc-subsection-title {
+  display: inline-block;
+  width: 100%;
+}
+#toc .chapter .chapter-subtitle, #toc .chapter .chapter-author, #toc .chapter .sections, #toc .chapter .chapter-license {
+  margin-left: 2.5em;
+}
+#toc .chapter-subtitle, #toc .chapter-author, #toc .chapter-license, #toc .sections {
+  margin-left: 2.5em;
+}
+li.part a span.toc-chapter-title {
+  font-size: 1.3em !important;
+}

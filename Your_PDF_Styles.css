@@ -1,0 +1,114 @@
+/*left align the textbook content*/
+p {
+    font-weight: normal;
+    margin-bottom: 0;
+    text-align: left;
+    widows: 2;
+    orphans: 1;
+}
+
+/*Hide images from print*/
+.hide-print-img {
+    display: none;
+}
+
+/*Provide links in Print PDF, only links that have class="external"*/
+.print a.external::after {
+    content: " (" attr(href) ")";
+}
+
+/*Reduces size of embedded video image, and reduces space around placeholders for all interactive content*/
+.interactive-content img {
+    max-width: 50%;
+}
+
+.interactive-content {
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/*Reduce padding around standard textboxes*/
+.textbox,
+.bcc-box {
+    padding: 1em 1em 1em 1em;
+}
+
+/*Automatically sets max size of images to % of page*/
+img {
+    max-width: 50%;
+}
+
+/*tag H5P items and remove them from PDF version*/
+.h5p {
+    display: none;
+}
+
+/*tag video items and remove them from PDF version*/
+.video {
+    display: none;
+}
+
+/*Editing Marks*/
+[role="insertion"] {
+    color: #1215b0;
+    text-decoration: underline;
+}
+
+[role="deletion"] {
+    color: #be0000;
+    text-decoration: line-through;
+}
+
+/*Align tables to center*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Tell PDF export *not* to resize this image*/
+.original-img-size {
+    max-width: 100%;
+}
+
+/*Prevents textbox headers being on different pages from their content*/
+.textbox__header {
+    page-break-after: avoid;
+}
+
+/*Reduce padding around special textbox headings*/
+.textbox.textbox--learning-objectives .textbox__header,
+.bcc-box.textbox--learning-objectives .textbox__header {
+    padding: 0.3em 1em 0.1em 1em;
+}
+
+.textbox.textbox--exercises .textbox__header,
+.bcc-box.textbox--exercises .textbox__header {
+    padding: 0.3em 1em 0.1em 1em;
+}
+
+.textbox.textbox--examples .textbox__header,
+.bcc-box.textbox--examples .textbox__header {
+    padding: 0.3em 1em 0.1em 1em;
+}
+
+.textbox.textbox--key-takeaways .textbox__header,
+.bcc-box.textbox--key-takeaways .textbox__header {
+    padding: 0.3em 1em 0.1em 1em;
+}
+
+/*make the text in very large tables smaller to fit in Pressbook Margins - Appendix A*/
+.largetable {
+    font-size: 45%;
+}
+
+/*Makes the header row repeat in the PDF export for tables that span more than one page*/
+table.tbody {
+    page-break-inside: avoid;
+}
+
+thead {
+    display: table-header-group;
+    margin-top: 100px;
+}
