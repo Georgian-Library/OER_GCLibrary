@@ -5,16 +5,6 @@
 .chapter blockquote,
 .back-matter blockquote,
 body#tinymce.wp-editor blockquote {
-    margin: 1em 2em 1em 2em;
-    font-family: "Encode Sans", sans-serif;
-    font-size: 0.9em;
-    font-style: normal;
-    font-weight: normal;
-    padding: 0 0 0 0;
-    letter-spacing: normal;
-    word-spacing: normal;
-    border-left: 0 none initial;
-    line-height: 1.4em;
     text-align: left;
 }
 
@@ -22,77 +12,19 @@ body#tinymce.wp-editor blockquote {
 .part p,
 .chapter p,
 .back-matter p,
-body#tinymce.wp-editor p {
-    font-weight: normal;
-    margin-bottom: 0;
-    text-align: left;
-    widows: 2;
-    orphans: 1;
-    hyphens: auto;
-    hyphenate-before: 3;
-    hyphenate-after: 3;
-    hyphenate-lines: 2;
-}
-
-.twocolumn {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 0.9em;
-    line-height: 1.4em;
-    text-align: left;
-    text-indent: 0;
-    column-gap: 1.5em;
-    column-count: 2;
-    column-fill: balance;
-}
-
-.twocolumn p {
-    font-size: inherit;
-    line-height: 1.4em;
-    text-align: left;
-    text-indent: 0;
-}
-
-.twocolumn p+p {
-    margin-top: 1em;
-}
-
-.threecolumn {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 0.9em;
-    text-indent: 0;
-    text-align: left;
-    line-height: 1.4em;
-    column-gap: 1em;
-    column-count: 3;
-    column-fill: balance;
-}
-
+body#tinymce.wp-editor p,
+.twocolumn,
+.twocolumn p,
+.threecolumn,
 .threecolumn p {
-    font-size: inherit;
-    line-height: 1.4em;
     text-align: left;
-    text-indent: 0;
-}
-
-.threecolumn p+p {
-    margin-top: 1em;
 }
 
 /*Capitalize all the page titles(h1)*/
 section.chapter header h1,
 section.front-matter header h1,
 section.back-matter header h1 {
-    display: block;
-    margin: 0 0 0 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2em;
-    font-style: normal;
     font-weight: 500;
-    hyphens: none;
-    line-height: 1.2em;
-    text-align: left;
     text-transform: capitalize;
 }
 
